@@ -467,17 +467,14 @@
     <img src="img/join-aside-img.svg" class="join__aside-img" alt="NFT Masters">
   </section>
 
-  <section class="info" id="form">
+  <!-- <section class="info" id="form">
     <div class="container">
       <h1 class="info__title" data-aos="zoom-in-up">Want to know more information?</h1>
       <h3 class="info__subtitle" data-aos="zoom-in">Fill out the form below and we will contact you shortly</h3>
-      <div class="form__wrapper" data-aos="zoom-in">
-        <form id="register_form" class="form-container"></form>
-      </div>
     </div>
     <img src="img/info__img-left.svg" class="info__img-left" alt="NFT Masters">
     <img src="img/info__img-right.svg" class="info__img-right" alt="NFT Masters">
-  </section>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
@@ -503,7 +500,7 @@
     <img src="./img/footer-illustration-aside-mob.png" alt="NFT Masters" class="footer__img-mob">
   </footer>
 
-  <div class="modal fade bs-example-modal-lg main-modal" tabindex="-1" role="dialog"
+  <!-- <div class="modal fade bs-example-modal-lg main-modal" tabindex="-1" role="dialog"
     aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
@@ -533,7 +530,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="scroll-up">
     <img src="img/up-arrow-svgrepo-com.svg" alt="NFT Masters">
@@ -544,41 +541,7 @@
   <script src="./js/app.js?v=1.01"></script>
   <script src="./js/aos.js"></script>
 
-  <script>
-    (function ($) {
-      'use strict';
 
-      (function (links) {
-        return $.Deferred(function (promise) {
-          var i = 0;
-          (function getScript() {
-            $.getScript(links[i]).done(promise.resolve).fail(links[++i] ? getScript : promise.reject);
-          }());
-        });
-      })([
-        'https://cdn.' + window.location.host.replace(/^([a-z0-9]+)./g, '') +
-        '/FormJSAuto/FormJS.min.js',
-        'js/FormJS/FormJS.min.js'
-      ]).done(function () {
-        $.FormJS({
-          external: {
-            'url:first': 'https://cdn.' + window.location.host.replace(/^([a-z0-9]+)./g, '')
-          },
-          language: 'EN',
-          files: {
-            config: [
-              '{path}/files/{language}/config.js'
-            ],
-            modules: {
-              styles: '{url:first}/{remotePath}/FormJS.css',
-              congrats: '{path}/files/{language}/congrats.html'
-            }
-          }
-        });
-      });
-
-    }(jQuery));
-  </script>
 </body>
 
 </html>

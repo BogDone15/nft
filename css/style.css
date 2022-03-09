@@ -2234,6 +2234,7 @@ header .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 
 .slider__block-btn:hover {
